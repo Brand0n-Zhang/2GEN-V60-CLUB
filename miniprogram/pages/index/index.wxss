@@ -1,10 +1,15 @@
-.main{
+.main {
 overflow: hidden;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .title{
-  /* width: 70%; */
+  width: 75%;
   margin-top: 40rpx;
-  margin-left: 40rpx;
+  opacity: 0.7;
+  /* margin-left: 40rpx; */
 }
 .headImg{
   width: 100%;
