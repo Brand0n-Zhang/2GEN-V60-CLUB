@@ -5,7 +5,7 @@
   },
   "miniprogramRoot": "miniprogram/",
   "compileType": "miniprogram",
-  "libVersion": "2.15.0",
+  "libVersion": "2.21.3",
   "projectname": "2GEN%20V60%20CLUB",
   "scripts": {
     "beforeCompile": "npm run tsc",

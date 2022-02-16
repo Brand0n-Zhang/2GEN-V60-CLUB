@@ -1,0 +1,105 @@
+<view>
+	<view class="selectLine">
+		<picker class="selectItem" bindchange="seriesChange" value="{{currentSeries}}" range="{{seriesOptions}}">
+			<view class="picker">
+				车型系列：{{currentSeries}}
+			</view>
+		</picker>
+		<picker class="selectItem" bindchange="moduleChange" value="{{currentModule}}" range="{{moduleOptions}}">
+			<view class="picker">
+				模块：{{currentModule}}
+			</view>
+		</picker>
+		<!-- <picker class="selectItem" bindchange="seriesChange" value="{{currentSeries}}" range="{{seriesOptions}}">
+			<view class="picker">
+				车型系列：{{currentSeries}}
+			</view>
+		</picker> -->
+	</view>
+
+	<view class="list">
+		<view class="listItem" wx:for="{{currentList}}" wx:key="index">
+			<view class="itemTitle">
+				<view class="titleText">
+					{{item.symptom}}
+				</view>
+
+				<view class="openBtn" wx:if="{{!item.isOpen}}" bindtap="clickItem" data-index="{{index}}">
+					详情
+				</view>
+				<view class="openBtn" wx:if="{{item.isOpen}}" bindtap="clickItem" data-index="{{index}}">
+					关闭详情
+				</view>
+
+			</view>
+
+			<view class="itemDetail" wx:if="{{item.isOpen}}">
+				<view class="detailText">
+					<view class="tag">
+						是否影响安全：
+					</view>
+					<view class="content">
+						{{item.level}}
+					</view>
+				</view>
+				<view class="detailText">
+					<view class="tag">
+						模块：
+					</view>
+					<view class="content">
+						{{item.module}}
+					</view>
+				</view>
+				<view class="detailText">
+					<view class="tag">
+						原因：
+					</view>
+					<view class="content">
+						{{item.reason}}
+					</view>
+				</view>
+				<view class="detailText">
+					<view class="tag">
+						处理方法：
+					</view>
+					<view class="content">
+						{{item.fix}}
+					</view>
+				</view>
+				<view class="detailText">
+					<view class="tag">
+						备注：
+					</view>
+					<view class="content">
+						{{item.remark}}
+					</view>
+				</view>
+				<view class="detailText">
+					<view class="tag">
+						相关配件：
+					</view>
+					<view class="content">
+						{{item.accessories}}
+					</view>
+				</view>
+				<view class="detailText">
+					<view class="tag">
+						相关受害者：
+					</view>
+					<view class="content">
+						{{item.victim}}
+					</view>
+				</view>
+
+				<!-- <view class="detailText">
+					是否影响安全：{{item.level}}
+				</view> -->
+
+			</view>
+
+
+		</view>
+	</view>
+
+
+</view>

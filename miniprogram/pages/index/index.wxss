@@ -1,19 +1,25 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+.main{
+overflow: hidden;
 }
-
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.title{
+  /* width: 70%; */
+  margin-top: 40rpx;
+  margin-left: 40rpx;
 }
-
-.usermotto {
-  margin-top: 200px;
+.headImg{
+  width: 100%;
+  height: 450rpx;
+  background-size: cover;  
+  background-image: url("https://zbd-image.oss-cn-hangzhou.aliyuncs.com/2GEN-V60-CLUB/bg.jpeg");
+  animation: headShow 2s;
+}
+@keyframes headShow {
+  0%{
+    opacity: 0;
+    transform: translateX(-50rpx);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

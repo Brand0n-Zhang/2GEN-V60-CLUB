@@ -1,13 +1,34 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/issue/issue",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "2GEN V60 ClUB",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#000",
+    "selectedColor": "#3498db",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "相册",
+        "iconPath": "asset/icon/c1.png",
+        "selectedIconPath": "asset/icon/c2.png"
+      },
+      {
+        "pagePath": "pages/issue/issue",
+        "text": "故障",
+        "iconPath": "asset/icon/s1.png",
+        "selectedIconPath": "asset/icon/s2.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
