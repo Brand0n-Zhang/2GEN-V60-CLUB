@@ -3,7 +3,7 @@
 	<view class="headImg">
 
 	</view>
-	<view class="title">
+	<!-- <view class="title">
 		首页还没想好放点什么，希望大家集思广益，出出主意
 	</view>
 	<view class="title">
@@ -13,7 +13,7 @@
 	<view class="title">
 		- 相册模块，放一些大家拍的漂亮照片
 
-	</view>
+	</view> -->
 
 
 </view>
