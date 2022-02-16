@@ -441,7 +441,7 @@ Page({
     if (currentSeries === '全部') {
       currentList = this.data.issueList;
     } else {
-      for (const item of this.data.currentList) {
+      for (const item of this.data.issueList) {
         if (item.series === 'T/B' || item.series === currentSeries) {
           currentList.push(item);
         }
@@ -461,7 +461,7 @@ Page({
     if (currentModule === '全部') {
       currentList = this.data.issueList;
     } else {
-      for (const item of this.data.currentList) {
+      for (const item of this.data.issueList) {
         if (item.module === currentModule) {
           currentList.push(item);
         }
